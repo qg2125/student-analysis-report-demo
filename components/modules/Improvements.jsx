@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+
 import {
   X,
   Pencil,
@@ -19,6 +20,7 @@ const Improvements = () => {
       "结合同学现阶段的情况，建议把提升GPA放在首位，其次是在托福和GRE考试上取得高分，最后是增加科研/实习经历。",
     academicAdvice:
       "目前3.667+，保持现有分数不断提高，冲击3.8，申请之前在能力范围内越高越好。",
+    prerequisiteAdvice: "暂无先修课建议",
     academicResources: [],
     examGoals: {
       language: { type: "托福", advice: "暂无语言分数建议" },
@@ -35,6 +37,8 @@ const Improvements = () => {
       "结合同学现阶段的情况，建议把提升GPA放在首位，其次是在托福和GRE考试上取得高分，最后是增加科研/实习经历。",
     academicAdvice:
       "目前3.667+，保持现有分数不断提高，冲击3.8，申请之前在能力范围内越高越好。",
+    prerequisiteAdvice:
+      "建议优先修读高级数学、统计学、计算机科学基础等核心课程，为后续专业课程打好基础。",
     academicResources: [
       {
         id: 1,
@@ -223,10 +227,20 @@ const Improvements = () => {
                 </div>
               </div>
 
-              {/* 竞赛网课链接 */}
+              {/* 先修课建议 */}
+              <div>
+                <h5 className="font-semibold mb-3 text-teal-600">先修课建议</h5>
+                <div className="p-4 bg-white rounded border">
+                  <p className="text-gray-700">
+                    {previewData.prerequisiteAdvice}
+                  </p>
+                </div>
+              </div>
+
+              {/* 推荐网课/竞赛（含链接） */}
               <div>
                 <h5 className="font-semibold mb-3 text-teal-600">
-                  竞赛网课链接
+                  推荐网课/竞赛（含链接）
                 </h5>
                 {getSelectedResources(previewData.academicResources).length >
                 0 ? (
@@ -437,7 +451,7 @@ const Improvements = () => {
                   <div className="space-y-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        个性化提升建议
+                        GPA提升建议
                       </label>
                       <textarea
                         value={formData.academicAdvice}
@@ -450,8 +464,25 @@ const Improvements = () => {
                     </div>
 
                     <div>
+                      <label className="block text-sm font-medium mb-2">
+                        先修课建议
+                      </label>
+                      <textarea
+                        value={formData.prerequisiteAdvice}
+                        onChange={(e) =>
+                          handleInputChange(
+                            "prerequisiteAdvice",
+                            e.target.value
+                          )
+                        }
+                        className="w-full p-3 border rounded h-24 resize-none"
+                        placeholder="输入先修课建议..."
+                      />
+                    </div>
+
+                    <div>
                       <label className="block text-sm font-medium mb-3">
-                        竞赛网课链接选择
+                        推荐网课/竞赛（含链接）选择
                       </label>
                       <div className="space-y-2">
                         {formData.academicResources.map((resource) => (
