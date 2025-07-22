@@ -403,6 +403,17 @@ const Improvements = () => {
                   </div>
                 </div>
               )}
+              <div>
+                <h5 className="font-semibold mb-3 text-teal-600">
+                  科研项目申请建议
+                </h5>
+                <img
+                  src="application.png"
+                  alt="科研项目申请"
+                  className="w-full max-w-full h-auto object-contain rounded-md"
+                  style={{ maxHeight: "70vh" }}
+                />
+              </div>
             </div>
           </div>
         </div>
