@@ -6,7 +6,7 @@ import { X, Pencil } from "lucide-react";
 const BgEvaluation = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [previewData, setPreviewData] = useState({
-    studentName: "卢广义",
+    studentName: "XXX",
     university: "南开大学",
     major: "经济学",
     gpa: "86",
@@ -23,7 +23,7 @@ const BgEvaluation = () => {
   });
 
   const [formData, setFormData] = useState({
-    studentName: "志豪",
+    studentName: "XXX",
     university: "南开大学",
     major: "经济学",
     gpa: "86",

@@ -6,11 +6,11 @@ import { X, Pencil } from "lucide-react";
 const StudentReportHomepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [previewData, setPreviewData] = useState({
-    studentName: "卢广义",
+    studentName: "XXX",
   });
 
   const [formData, setFormData] = useState({
-    studentName: "卢广义",
+    studentName: "XXX",
   });
 
   const handleInputChange = (field, value) => {
