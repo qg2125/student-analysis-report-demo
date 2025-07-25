@@ -78,9 +78,9 @@ const WrapUp = () => {
         </div>
 
         {/* 下半部分 - 湖绿色背景 */}
-        <div className="min-h-96 bg-teal-500 flex flex-col justify-center px-8 md:px-16 text-white relative">
+        <div className="min-h-72 bg-teal-500 flex flex-col justify-center px-8 md:px-16 text-white relative">
           {/* 帮助内容列表 */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {previewData.helpItems.map((item, index) => (
               <div key={index} className="flex items-start">
                 <span className="text-xl font-bold mr-4 mt-1 flex-shrink-0">
@@ -93,8 +93,8 @@ const WrapUp = () => {
         </div>
 
         {/* 新增的励志文字部分 */}
-        <div className="bg-white py-8 px-8 md:px-16 text-center">
-          <div className="text-teal-500 text-lg leading-relaxed space-y-2">
+        <div className="bg-white py-6 px-6 md:px-16 text-center">
+          <div className="text-teal-500 text-base leading-relaxed space-y-1">
             <p>希望同学能够在接下来的时间明确努力方向</p>
             <p>提升学术和实践软硬实力</p>
             <p>我们一起努力</p>

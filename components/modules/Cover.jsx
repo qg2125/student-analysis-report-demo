@@ -59,13 +59,13 @@ const StudentReportHomepage = () => {
             <img
               src="computer.png"
               alt="Computer Illustration"
-              className="w-120 h-auto"
+              className="w-100 h-auto"
             />
           </div>
         </div>
 
         {/* 下半部分 - 湖绿色背景 */}
-        <div className="h-96 bg-teal-500 flex flex-col justify-center px-8 md:px-16 text-white relative">
+        <div className="h-84 bg-teal-500 flex flex-col justify-center px-8 md:px-16 text-white relative">
           {/* 主标题 */}
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-light mb-4">
